@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DocQuery</title>
+  <link rel="stylesheet" href="./static/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>DocQuery</h1>
+    <p>Give me a text and I'll answer your questions!</p>
+    <form id="pdf-form">
+      <div class="form-group">
+        <label for="pdf-file">Select PDF file:</label>
+        <input type="file" id="pdf-file" accept=".pdf">
+      </div>
+      <div class="form-group">
+        <label for="text-input">Or enter text:</label>
+        <textarea id="text-input"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="question-input">Enter your question:</label>
+        <input type="text" id="question-input" placeholder="What is the capital of France?">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <div id="answer-container"></div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.1.81/pdf.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./static/script.js"></script>
+</body>
+</html>
